@@ -35,7 +35,7 @@ module.exports = () => {
 		return $.gulp.src(path.path.src.favicon_sm)
 			.pipe($.plugins.plumber())
 			.pipe($.plugins.favicons({
-				html: 'favicons-logo.html',
+				html: 'favicons-logo.pug',
 				pipeHTML: true,
 				path: '/images/favicons/',
 				replace: true,

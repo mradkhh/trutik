@@ -1,10 +1,10 @@
 include ../../mixins/pug/svg-icon
 block variables
     -
-        var baseDir = './';
+        let baseDir = './';
 
 doctype html
-html(lang="ru")
+html(lang="en")
     //- Include head
     include ./head
 
@@ -13,16 +13,6 @@ html(lang="ru")
             .page__content
                 //- Include header
                 include ../../components/header/header
-
-                if (pageClass !== 'homepage')
-                    nav.breadcrumbs.mb-sm-30
-                        .container
-                            ul.breadcrumbs__list
-                                li
-                                    a(href="/") Главная
-                                    span.breadcrumbs__divider /
-
-                                li.is-active #{title}
 
                 block top-position
 
@@ -34,9 +24,6 @@ html(lang="ru")
 
             //- Include footer
             include ../../components/footer/footer
-
-        //- Include callback modal
-        include ../../components/form/form--callback
 
         a.go-top.go-top--js(href='#')
             +icon('arrow-up')

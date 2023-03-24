@@ -1,0 +1,49 @@
+// =--------- HERO --------------=
+@import "components/hero-form";
+
+
+.hero__section {
+  background-color: var(--brand);
+}
+
+.hero__wrapper {
+  padding-top: 72px;
+  .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 158px;
+
+    &__left {
+      max-width: 524px;
+
+      h1 {
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 112%;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+      }
+
+      p {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-bottom: 107px;
+      }
+
+      div {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

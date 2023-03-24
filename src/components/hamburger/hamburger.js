@@ -2,8 +2,8 @@ import enquire from 'enquire.js'
 import { overlayAdd, overlayRemove } from '../overlay/overlay'
 
 const $hamburger = document.querySelector('.hamburger--js')
-const $mainmenu = document.querySelector('.mainmenu--js')
-const $closeBtn = document.querySelector('.mainmenu--close')
+const $mainmenu = document.querySelector('.sections--js')
+const $closeBtn = document.querySelector('.sections--close')
 
 function showMenu() {
 	$mainmenu.classList.add('is-active')

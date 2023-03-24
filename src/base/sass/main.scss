@@ -1,0 +1,16 @@
+@import "normalize";
+@import "design_tokens";
+@import "base";
+@import "typography";
+@import "variables";
+@import "fonts";
+
+// =------- component ----------=
+@import "../../components/components";
+
+// =--------- vendor -----------=
+//@import "../../vendor/vendor";
+
+header {
+  background-color: #182469;
+}

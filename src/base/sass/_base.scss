@@ -1,0 +1,104 @@
+@import "variables";
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main), sans-serif;
+  background-color: var(--white);
+}
+
+@use 'sass:math';
+
+// ---------------- container ------------------
+
+$containerWidth: 1280;
+$containerPadding: 40;
+$containerSidePadding: 20;
+$breakpoint1450: 1449.98 + px;
+$breakpoint992: 991.98 + px;
+$breakpoint768: 767.98 + px;
+$breakpoint568: 567.98 + px;
+$breakpoint480: 479.98 + px;
+
+
+.container {
+  max-width: ($containerWidth + $containerPadding) + px !important;
+  width: 100% !important;
+  margin-inline: auto !important;
+  padding-inline: $containerSidePadding + px !important;
+
+  @media (max-width: $breakpoint1450) {
+    max-width: 1200px;
+  }
+  @media (max-width: $breakpoint992) {
+    max-width: 960px;
+    padding-inline: 25px;
+  }
+  @media (max-width: $breakpoint768) {
+    max-width: 740px;
+    padding-inline: 20px;
+  }
+  @media (max-width: $breakpoint568) {
+    max-width: none;
+    padding-inline: 8px !important;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+header {
+  background-color: #182469;
+}
+
+.btn {
+  padding: 9px 29px;
+  border-radius: 8px;
+
+  &__white {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: var(--brand);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  &__orange {
+    background: #FF8A00;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    width: 100%;
+  }
+}
+
+input {
+  outline: none;
+  background: #FFFFFF;
+  border: 1px solid #E8EAEB;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--brand);
+  padding: 14px 16px;
+  width: 100%;
+  &:placeholder-shown {
+    color: #848E99;
+  }
+}

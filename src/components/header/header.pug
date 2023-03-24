@@ -1,12 +1,19 @@
-header.header.py-15.mb-30
+header.header
     .container
-        .row.align-items-center
-            .col-3.d-lg-none
-                include ../hamburger/hamburger
-
-            .col-xl-4.col-lg-3.col-6.text-center.text-lg-start
-                .logo
-                    include ../logo/logo
-
-            .col-xl-8.col-lg-9.col-3
-                include ../mainmenu/mainmenu
+        .content
+            .content__left
+                include ../logo/logo
+                nav.navbar
+                    ul
+                        li
+                            a(href='/') Home
+                        li
+                            a(href='/') Why Trutik?
+                        li
+                            a(href='/') Features
+                        li
+                            a(href='/') Functions
+                        li
+                            a(href='/') About Us
+            .content__right
+                a(href='/').btn.btn__white Login

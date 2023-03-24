@@ -1,0 +1,33 @@
+.header {
+    background-color: #182469;
+    padding-block: 22px;
+
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 48px;
+
+            nav.navbar ul {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 32px;
+
+                a {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: #FFFFFF;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
